@@ -1,0 +1,31 @@
+.new_list{
+  max-width: 500px;
+  margin: 100px auto 0;
+  
+}
+
+.list_destroy{
+  padding-left: 150px;
+}
+
+.list_destroy a{
+  color: red;
+}
+
+.by-day{
+margin-top: 20px;
+margin-left: 120px;
+}
+
+.nothing{
+  font-size: large;
+  font-style:normal;
+  padding-left: 620px;
+  padding-top: 210px;
+
+}
+
+label{
+margin-top: 20px;
+
+}
