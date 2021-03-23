@@ -13,7 +13,9 @@
 
   <body>
 
-<%= render 'partial/header' %>
+<%# if user_signed_in? %>
+<%= render 'partial/header'  %>
+<%# end %>
 
     <%= yield %>
   </body>
