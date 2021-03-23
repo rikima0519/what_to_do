@@ -1,0 +1,19 @@
+<div class="listnewPage">
+  <div class="container">
+    <%= form_with model: @list, class: "new_list", local: true do |f| %>
+      <% if @list.errors.any? %>
+        <p class="text-danger">タイトルは1～255文字以内で入力してください</p>
+      <% end %>
+      <%= f.label :title %>
+      <%= f.text_field :title, autofocus: true, class: "form-control listName", placeholder: "やることを入力" %>
+
+  <div class="by-day">
+      <%#= "いつまでに終わらせる？" %>
+      <%= f.label :いつまでに終わらせる？ %>
+      <%= f.date_field :day %>
+  </div>
+      
+      <div class="text-center"><%= f.submit "作成", class: "submitBtn" %></div>
+    <% end %>
+  </div>
+</div>

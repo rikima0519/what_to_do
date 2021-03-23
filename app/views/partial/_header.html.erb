@@ -3,7 +3,7 @@
         <ul class="header_menu">
 
         <% if user_signed_in? %>
-          <li class="nav-link"><%= current_user.name %>さん</li>
+          <li class="nav-link">ようこそ<%= current_user.name %>さん</li>
 
           <% else %>
           <li></li>
@@ -15,8 +15,7 @@
             <ul class="header_menu_inner">
 
               <li>
-                <%= link_to "", class: "nav-link" %>
-                  <span class="mr-1">リストを作成</span> <%#のちに修正%>
+                <%= link_to "リストを作成", new_list_path, class: "nav-link" %>
               </li>
               <% if user_signed_in? %>
               <li><%= link_to "サインアウト", destroy_user_session_path, method: :delete, class: "nav-link" %></li>
