@@ -7,9 +7,11 @@
       <%= f.label :title %>
       <%= f.text_field :title, autofocus: true, class: "form-control listName", placeholder: "やることを入力" %>
 
+      <%= f.label :explain %>
+      <%= f.text_area :explain, class: "form-control listName", placeholder: "詳細を入力（ある場合のみ）", rows: "2" %>    
+
   <div class="by-day">
-      <%#= "いつまでに終わらせる？" %>
-      <%= f.label :いつまでに終わらせる？ %>
+      <%= f.label :終了目安  %>
       <%= f.date_field :day %>
   </div>
       

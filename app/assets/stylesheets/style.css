@@ -13,8 +13,8 @@
 }
 
 .by-day{
-margin-top: 10px;
-margin-left: 50px;
+margin-top: 20px;
+margin-left: 120px;
 }
 
 .nothing{
@@ -22,5 +22,10 @@ margin-left: 50px;
   font-style:normal;
   padding-left: 620px;
   padding-top: 210px;
+
+}
+
+label{
+margin-top: 20px;
 
 }

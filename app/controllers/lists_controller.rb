@@ -1,7 +1,7 @@
 class ListsController < ApplicationController
 
   def index
-   @lists = List.all
+   @lists = List.all.order('day ASC')
   end
   
   def new
@@ -38,7 +38,7 @@ class ListsController < ApplicationController
 
   private
     def list_params
-     params.require(:list).permit(:title, :day).merge(user_id: current_user.id)
+     params.require(:list).permit(:title, :day, :explain).merge(user_id: current_user.id)
     end
 
 end

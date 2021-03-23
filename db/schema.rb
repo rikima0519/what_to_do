@@ -23,7 +23,8 @@ ActiveRecord::Schema.define(version: 2021_03_23_050208) do
 
   create_table "lists", force: :cascade do |t|
     t.string "title", null: false
-    t.integer "day", null: false
+    t.date "day", null: false
+    t.text "explain", null: false
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
