@@ -1,7 +1,7 @@
 
 
 <div class="topPage">
-  <div class="listWrapper">
+  
   <% if @lists.blank? %>
       <div class="nothing"><%= "まだリストはありません" %></div>
   <% else %>
@@ -13,13 +13,13 @@
 
           <div class="explain"><%= list.explain %></div>
           <div class="by-day-index"><%= "期限：#{list.day}まで" %></div>
-          <div class="list_destroy"><%= link_to "終わった？", list_path(list.id), method: :delete %></div>
+          <div class="list_destroy"><%= link_to "終わったらクリック", list_path(list.id), method: :delete %></div>
     
 
       </div>
     <% end %>
   <% end %>
-  </div>
+  
 </div>
 
 
