@@ -87,4 +87,4 @@ https://i.gyazo.com/b9a12503863b5fe61adcc11dd0a618ad.mp4
 
 
 # ローカルでの動作方法
-後ほど記述
+  git clone https://github.com/rikima0519/what_to_do.git
