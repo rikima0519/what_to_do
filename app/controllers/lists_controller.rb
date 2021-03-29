@@ -1,7 +1,8 @@
 class ListsController < ApplicationController
 
   def index
-   @lists = List.all.order('day ASC')
+   #@lists = List.includes(:user).order('day ASC')
+   @lists = current_user.lists.includes(:user).order('day ASC')
   end
   
   def new

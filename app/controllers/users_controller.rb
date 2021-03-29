@@ -12,6 +12,13 @@ class UsersController < ApplicationController
     end
   
   end
+
+
+  def show
+    current_user = User.find(params[:id])
+    @name = current_user.name
+    @lists = current_user.lists
+  end
   
   
   private

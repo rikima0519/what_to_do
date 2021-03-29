@@ -10,7 +10,8 @@ What_to_do
 やり終えたものは削除機能で削除できる。
 
 # URL
-後ほど実装
+https://what-to-do2.herokuapp.com/
+
 
 # テスト用アカウント
 email: test@example
